@@ -1,6 +1,6 @@
 # 🎓 Projetos da Faculdade
 
-Este repositório foi criado para armazenar e organizar os projetos que estou desenvolvendo durante minha graduação.  
+Este repositório foi criado para armazenar e organizar os projetos que estou desenvolvendo durante minha graduação de Engenharia de Software.  
 Cada pasta contém um projeto independente com seu próprio código e documentação.
 
 ---
@@ -65,7 +65,7 @@ Cada pasta contém um projeto independente com seu próprio código e documenta�
   - Gerenciamento de usuários  
 
   **Acesso ao projeto:**  
-  O projeto está hospedado neste link *(adicione aqui o link quando tiver)*.  
+  O projeto está hospedado neste [link](https://infnet-aluno2023-01.azurewebsites.net/).  
 
   **Autor:**  
   Desenvolvido por *Eduardo Abrahão*.  
