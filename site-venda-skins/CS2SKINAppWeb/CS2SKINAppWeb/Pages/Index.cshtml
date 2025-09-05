@@ -1,0 +1,58 @@
+﻿@page
+@model IndexModel
+
+@{
+    // Defina o número de itens por página
+    int itensPorPagina = 6;
+
+    // Calcule o número total de páginas
+    int numeroTotalPaginas = (int)Math.Ceiling((double)Model.ListaSkins.Count / itensPorPagina);
+
+    // Obtenha o número da página atual a partir dos parâmetros da solicitação (query string)
+    int paginaAtual = Request.Query.ContainsKey("pagina") ? Convert.ToInt32(Request.Query["pagina"]) : 1;
+
+    // Calcule o índice de início e fim dos itens para a página atual
+    int indiceInicio = (paginaAtual - 1) * itensPorPagina;
+    int indiceFim = Math.Min(indiceInicio + itensPorPagina, Model.ListaSkins.Count);
+}
+
+<div class="row justify-content-md-center">
+
+    @for (int i = indiceInicio; i < indiceFim; i++)
+    {
+        <div class="card col-12 col-lg-3 m-3">
+            <img src="@Model.ListaSkins[i].ImagemUri" class="p-3" style="border-radius: 25px">
+            <div class="card-body">
+                <h5 class="card-title">@Model.ListaSkins[i].Nome</h5>
+                <p class="card-text">@Model.ListaSkins[i].Condicao</p>
+                <p class="card-text">@Model.ListaSkins[i].Descricao</p>
+            </div>
+            <a class="btn btn-primary mt-3 mb-3"
+               asp-page="/Comprar"
+               asp-route-id="@Model.ListaSkins[i].SkinsID"
+               asp-route-slug="@Model.ListaSkins[i].NomeSlug">Comprar</a>
+        </div>
+    }
+
+    <footer>
+        <div>
+            <ul class="pagination pagination-lg">
+                <li class="page-item @(paginaAtual == 1 ? "disabled" : "")">
+                    <a class="page-link" href="?pagina=@(paginaAtual - 1)">&laquo;</a>
+                </li>
+
+                @for (int i = 1; i <= numeroTotalPaginas; i++)
+                {
+                    <li class="page-item @(paginaAtual == i ? "active" : "")">
+                        <a class="page-link" href="?pagina=@i">@i</a>
+                    </li>
+                }
+
+                <li class="page-item @(paginaAtual == numeroTotalPaginas ? "disabled" : "")">
+                    <a class="page-link" href="?pagina=@(paginaAtual + 1)">&raquo;</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</div>

@@ -45,3 +45,29 @@ Cada pasta contém um projeto independente com seu próprio código e documenta�
   - Cadastro de usuário  
 
 </details>
+
+<details>
+  <summary>🔹 site-venda-skins</summary>
+
+  **Descrição:**  
+  Projeto de site de venda de skins desenvolvido em **C#** utilizando **Razor Pages** e banco de dados para operações CRUD.  
+
+  **Tecnologias utilizadas:**  
+  - C#  
+  - Razor Pages  
+  - Banco de Dados  
+  - Azure  
+
+  **Funcionalidades:**  
+  - CRUD de skins (criar, visualizar, atualizar e excluir)  
+  - Visualização de skins disponíveis para venda  
+  - Autenticação e autorização de usuários  
+  - Gerenciamento de usuários  
+
+  **Acesso ao projeto:**  
+  O projeto está hospedado neste link *(adicione aqui o link quando tiver)*.  
+
+  **Autor:**  
+  Desenvolvido por *Eduardo Abrahão*.  
+
+</details>

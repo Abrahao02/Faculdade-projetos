@@ -1,0 +1,37 @@
+﻿@page "/Comprar/{slug}/{id}"
+@model CS2SKINAppWeb.Pages.ComprarModel
+@{
+}
+<h2 class="my-3">@Model.SKIN.Nome</h2>
+
+<div class="row">
+
+    <div class="col-4">
+        <img class="img-fluid rounded" src="@Model.SKIN.ImagemUri" />
+    </div>
+
+    <div class="col-6">
+        <h4 class="my-3">Sobre:</h4>
+        <p>@Model.SKIN.Descricao</p>
+        <h4 class="my-3">Mais Info:</h4>
+        <ul>
+            <li><label asp-for="SKIN.Raridade"></label>: @Model.SKIN.Raridade</li>
+            <li><label asp-for="SKIN.Condicao"></label>: @Model.SKIN.Condicao</li>
+            <li><label asp-for="SKIN.Float"></label>: @Model.SKIN.Float</li>
+            <li><label asp-for="SKIN.Pattern"></label>: @Model.SKIN.Pattern</li>
+            <li><label asp-for="SKIN.DataCadastro"></label>: @Model.SKIN.DataCadastro</li>
+            <li><label asp-for="SKIN.Preco"></label>: @Html.DisplayFor(model => model.SKIN.Preco)</li>
+
+        </ul>
+        <a class="btn my-3 btn-primary">@Html.DisplayFor(model => model.SKIN.Preco) Finalizar Compra</a>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <a class="btn my-3 btn-primary"
+               asp-page="Edit" asp-route-id="@Model.SKIN.SkinsID">Editar</a>
+        }
+        
+    </div>
+
+</div>
+
+

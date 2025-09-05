@@ -1,0 +1,82 @@
+﻿@page
+@model CS2SKINAppWeb.Pages.CriarModel
+@{
+
+}
+
+<div class="row pt-5">
+    <div class="col-md-4">
+    <form method="post">
+        <h4>Inclusao SKIN</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="SKIN.Nome" class="control-label"></label>
+                <input asp-for="SKIN.Nome" class="form-control" />
+                <span asp-validation-for="SKIN.Nome" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+                <label asp-for="SKIN.Preco" class="control-label"></label>
+                <input asp-for="SKIN.Preco" class="form-control" />
+                <span asp-validation-for="SKIN.Preco" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+                <label asp-for="SKIN.Raridade" class="control-label"></label>
+                <input asp-for="SKIN.Raridade" class="form-control" />
+                <span asp-validation-for="SKIN.Raridade" class="text-danger"></span>
+        </div>
+
+            <div class="form-group">
+                <label asp-for="SKIN.Condicao" class="control-label"></label>
+                <select asp-for="SKIN.Condicao" asp-items="new SelectList(Model.OpcoesCondicao)" class="form-control"></select>
+                <span asp-validation-for="SKIN.Condicao" class="text-danger"></span>
+            </div>
+
+
+        <div class="form-group">
+                <label asp-for="SKIN.Float" class="control-label"></label>
+                <input asp-for="SKIN.Float" class="form-control" />
+                <span asp-validation-for="SKIN.Float" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+                <label asp-for="SKIN.Pattern" class="control-label"></label>
+                <input asp-for="SKIN.Pattern" class="form-control" />
+                <span asp-validation-for="SKIN.Pattern" class="text-danger"></span>
+        </div> 
+
+        <div class="form-group">
+                <label asp-for="SKIN.Descricao" class="control-label"></label>
+                <input asp-for="SKIN.Descricao" class="form-control" />
+                <span asp-validation-for="SKIN.Descricao" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+                <label asp-for="SKIN.ImagemUri" class="control-label"></label>
+                <input asp-for="SKIN.ImagemUri" class="form-control" />
+                <span asp-validation-for="SKIN.ImagemUri" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+                <label asp-for="SKIN.DataCadastro" class="control-label"></label>
+                <input asp-for="SKIN.DataCadastro" class="form-control" />
+                <span asp-validation-for="SKIN.DataCadastro" class="text-danger"></span>
+        </div>
+
+        
+
+        <div class="form-group mt-4">
+            <input type="submit" value="Salvar" class="btn btn-primary" />
+        </div>
+    </form>
+    </div>
+</div>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
