@@ -1,24 +1,28 @@
 # 🎓 Projetos da Faculdade
 
-Este repositório foi criado para armazenar e organizar os projetos que estou desenvolvendo durante minha graduação Engenharia de Software - Instituto INFNET.  
-Aqui estarão disponíveis códigos, configurações e documentações de cada atividade prática realizada ao longo do curso.
+Este repositório foi criado para armazenar e organizar os projetos que estou desenvolvendo durante minha graduação.  
+Cada pasta contém um projeto independente com seu próprio código e documentação.
 
 ---
 
 ## 📂 Projetos
 
-### 🔹 math-service
-**Descrição:**  
-O `math-service` é um microserviço REST construído em **Spring Boot**, cujo objetivo é disponibilizar operações matemáticas básicas via API RESTful.  
+<details>
+  <summary>🔹 math-service</summary>
 
-**Tecnologias utilizadas:**  
-- Java 17  
-- Spring Boot 3.5.5  
-- Maven  
+  **Descrição:**  
+  Microserviço REST em **Spring Boot** que disponibiliza operações matemáticas básicas.  
 
-**Funcionalidades implementadas:**  
-- Soma  
-- Subtração  
-- Multiplicação  
-- Divisão  
-- Potência  
+  **Tecnologias utilizadas:**  
+  - Java 17  
+  - Spring Boot 3.5.5  
+  - Maven  
+
+  **Funcionalidades:**  
+  - Soma  
+  - Subtração  
+  - Multiplicação  
+  - Divisão  
+  - Potência  
+
+</details>
