@@ -26,3 +26,22 @@ Cada pasta contém um projeto independente com seu próprio código e documenta�
   - Potência  
 
 </details>
+
+<details>
+  <summary>🔹 receita-projeto</summary>
+
+  **Descrição:**  
+  Aplicação em **Java Console** que implementa um CRUD de receitas, com sistema de **login e cadastro** para acesso.  
+
+  **Tecnologias utilizadas:**  
+  - Java  
+
+  **Funcionalidades:**  
+  - Cadastro de receitas  
+  - Listagem de receitas  
+  - Edição de receitas  
+  - Exclusão de receitas  
+  - Login de usuário  
+  - Cadastro de usuário  
+
+</details>
