@@ -71,3 +71,26 @@ Cada pasta contém um projeto independente com seu próprio código e documenta�
   Desenvolvido por *Eduardo Abrahão*.  
 
 </details>
+
+<details>
+  <summary>🔹 to-do-list-py</summary>
+
+  **Descrição:**  
+  Aplicativo simples de **lista de tarefas** desenvolvido em **Python** utilizando a biblioteca **Tkinter** para interface gráfica.  
+
+  **Tecnologias utilizadas:**  
+  - Python  
+  - Tkinter  
+
+  **Funcionalidades:**  
+  - Adicionar novas tarefas  
+  - Excluir tarefas existentes  
+  - Marcar tarefas como concluídas (com destaque em verde)  
+
+  **Como executar o aplicativo:**  
+  1. Clone este repositório  
+  2. Certifique-se de ter o Python instalado em seu sistema  
+  3. Execute o arquivo `lista_tarefas.py`  
+
+
+</details>
