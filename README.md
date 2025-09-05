@@ -67,7 +67,4 @@ Cada pasta contém um projeto independente com seu próprio código e documenta�
   **Acesso ao projeto:**  
   O projeto está hospedado neste [link](https://infnet-aluno2023-01.azurewebsites.net/).  
 
-  **Autor:**  
-  Desenvolvido por *Eduardo Abrahão*.  
-
 </details>
